@@ -1,0 +1,6 @@
+>> v=randn(1,33);
+>> for i=1:33
+if v(i)<0
+v(i)
+end
+end
