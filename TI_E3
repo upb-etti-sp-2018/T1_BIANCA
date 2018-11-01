@@ -1,0 +1,5 @@
+>> x=uint8([1;2;3;4;5]);
+>> y=uint8([6;7;8;9;10]);
+>> z=complex(x,y);
+>> r=real(z);
+>> m=mean(r)
