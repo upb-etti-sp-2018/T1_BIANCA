@@ -3,6 +3,6 @@ z=[0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0];
 >> m=-5:15;
 >> figure
 subplot(2,1,1);
-plot(z,n)
+stem(z,n)
 subplot(2,1,2);
-plot(z,m)
+stem(z,m)
