@@ -1,0 +1,7 @@
+n=0:20;
+while (-15<=n<=25)
+x1=sin((pi/17)*n);
+end
+while (0<=n<=50)
+x2=cos((pi/sqrt(23))*n);
+end
