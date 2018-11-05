@@ -1,0 +1,14 @@
+>> F=50;
+t=0:0.01:0.2;
+s=2*sin(2*pi*F*t);
+plot(t,s,'.-'),xlabel('Timp [s]'),grid
+%nu obtinem un grafic sinusoidal deoarece reducand t-ul la valoarea de 0.01,
+%MATLAB-ul nu detine destule esantioane incat sa reconstituiasca semnalul sinusoidal,
+%respectiv va uni acele putine puncte prin linii ce vor genera un semnal aleator
+
+>> F=50;
+t=0:0.0002:0.2;
+s=2*sin(2*pi*F*t);
+plot(t,s,'.-'),xlabel('Timp [s]'),grid
+%modificand rata esantionarii (t) la valoarea de 0.0002, obtinem esantioane suplimentare fata de primul caz
+%ceea ce ne va permite plotarea unui sinus mai fin, cu mai putine colturi, respectiv cu mai putine armonici
