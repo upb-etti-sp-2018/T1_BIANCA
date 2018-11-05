@@ -1,5 +1,4 @@
->> x=uint8([1;2;3;4;5]);
->> y=uint8([6;7;8;9;10]);
->> z=complex(x,y);
->> r=real(z); %se cauta elementele reale ale vectorului
->> m=mean(r) %media aritmetică a părţilor reale ale elementelor vectorului
+>> x=randn(1,13);
+>> y=randn(1,13);
+>> z=complex(x,y);      %se creeaza vectorul
+functie(z);     %se apeleaza functia
