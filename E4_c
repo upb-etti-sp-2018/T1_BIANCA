@@ -1,7 +1,16 @@
-n=0:20;
-while (-15<=n<=25)
-x1=sin((pi/17)*n); %se defineste x1
-end
-while (0<=n<=50)
-x2=cos((pi/sqrt(23))*n); %se defineste x2
-end
+x=-15:0.01:25;
+y=0:0.01:50;
+x1=sin((pi/17)*x); %se defineste x1
+x2=cos((pi/sqrt(23))*y); %se defineste x2
+subplot(2,1,1);
+plot(a,x)
+hold on; %reţinem graficul curent şi adaugăm în aceeaşi fereastră grafică următoarele reprezentări grafice
+x=cos(pi*b/sqrt(23));
+plot(b,x),title('sin si cos')
+hold off; %reţinem graficul curent şi adaugăm în aceeaşi fereastră grafică următoarele reprezentări grafice
+subplot(2,1,2) 
+plot(b,x),title('cos')
+
+stem(a,x)
+stem(b,x),title('sin si cos')
+stem(b,x),title('cos')
