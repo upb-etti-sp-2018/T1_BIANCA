@@ -1,6 +1,5 @@
 a=[0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9 2]
-b=[1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1]
-a*b
-b*a
-a.*b
-b.*a
+b=[1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1] %are aceleasi numar de elemente ca a, adica 21
+x=a*b %se aduna a[1,i]*b[i,1]
+y=b*a %se creeaza o matrice de 21 linii si 21 coloane unde pe fiecare coloana apare produsul a[1,i]*b[i,1]
+z=diag(a)*b %se inmultesc vectorii element cu element
