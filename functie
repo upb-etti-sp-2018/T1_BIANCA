@@ -1,0 +1,5 @@
+function[m,p,mat] = functie(z)      %se creeaza functia
+    m=mean(real(z))     %se calculeaza media aritmetică a părţilor reale ale elementelor vectorului
+    p=z.^2      %vector ce conţine elementele vectorului iniţial ridicate la pătrat
+    mat=z*(transpose(z))      %o matrice obţinută din înmulţirea vectorului iniţial cu transpusul său
+  end
