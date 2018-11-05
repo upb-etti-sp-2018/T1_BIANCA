@@ -1,7 +1,7 @@
 n=0:20;
 while (-15<=n<=25)
-x1=sin((pi/17)*n);
+x1=sin((pi/17)*n); %se defineste x1
 end
 while (0<=n<=50)
-x2=cos((pi/sqrt(23))*n);
+x2=cos((pi/sqrt(23))*n); %se defineste x2
 end
