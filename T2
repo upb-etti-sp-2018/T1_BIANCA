@@ -5,8 +5,9 @@ subplot(3,1,1)	    %impartirea ferestrei output in 3 linii si o coloana
 plot(t,x);          %afisarea graficului
 xlabel('Axa timpului')      %denumirea axei 0X
 ylabel('Amplitudine')      %denumirea axei 0Y
-title('Semnal Triunghiular 2ms')      %denumirea graficului
-axis([0 10 -2.5 2])         %limitele axelor
+title('Semnal Triunghiular 2ms')      %denumirea graficului      
+ylim([-2.5 2])			    %limitele axei y
+xlim([0 10])			      %limitele axei x        
 grid
 
 t=0:0.02:3*T;
@@ -16,7 +17,8 @@ plot(t,x);
 xlabel('Axa timpului')
 ylabel('Amplitudine')
 title('Semnal Triunghiular 20ms')
-axis([0 10 -2.5 2])
+ylim([-2.5 2])			  
+xlim([0 10])			      
 grid
 
 t=0:0.2:3*T;
@@ -26,5 +28,6 @@ plot(t,x);
 xlabel('Axa timpului')
 ylabel('Amplitudine')
 title('Semnal Triunghiular 200ms')
-axis([0 10 -2.5 2])
+ylim([-2.5 2])			   
+xlim([0 10])			      
 grid
