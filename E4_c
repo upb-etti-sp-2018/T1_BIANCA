@@ -4,6 +4,19 @@ figure
 stem(n,x1),hold on      %reţinem graficul curent şi adaugăm în aceeaşi fereastră grafică următoarele reprezentări grafice
 n=0:50;
 x2=cos((pi/sqrt(23))*n); %se defineste x2
+plot(n,x2)
+figure
+n=-15:25;
+subplot(2,1,1),plot(n,x1),title('Sinus folosind plot'),grid
+n=0:50;
+subplot(2,1,2),plot(n,x2),title('Cosinus folosind plot'),grid
+
+>> n=-15:25;
+x1=sin((pi/17)*n); %se defineste x1
+figure
+stem(n,x1),hold on      %reţinem graficul curent şi adaugăm în aceeaşi fereastră grafică următoarele reprezentări grafice
+n=0:50;
+x2=cos((pi/sqrt(23))*n); %se defineste x2
 stem(n,x2)
 figure
 n=-15:25;
