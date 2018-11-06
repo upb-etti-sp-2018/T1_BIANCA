@@ -7,7 +7,7 @@ plot(t,x);						%afisarea graficului
 axis([0 10 -1.5 1])					%limitele axelor
 xlabel('Axa timpului')						%notarea axei 0X
 ylabel('Amplitudine')					        %notarea axei 0Y
-title('semnal cu rezolutie temporara de 2ms')			                %denumirea graficului
+title('Semnal cu rezolutie temporara de 2ms')			                %denumirea graficului
 grid					 
 
 t = 0:0.02:5*T;
@@ -17,7 +17,7 @@ plot(t,x);
 axis([0 10 -1.5 1])
 xlabel('Axa timpului')
 ylabel('Amplitudine')
-title('semnal cu rezolutie temporara de 20ms')
+title('Semnal cu rezolutie temporara de 20ms')
 grid
 
 t = 0:0.2:5*T;
