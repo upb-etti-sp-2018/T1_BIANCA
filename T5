@@ -3,8 +3,8 @@ t=0:0.002:3*T;                        %%rezolutia temporara
 y=abs(1.5 * sin(2*pi*0.25*t));        %Generare semnal sinusoidal redresat dublă alternanţă
 subplot(3,1,1)             %impartirea ferestrei output in 3 linii si o coloana
 plot(t,y)                  %afisarea graficului
-ylim([-3 3])			        %limitele axei y
-xlim([0 10])		      	%limitele axei
+ylim([-3 3])			      %limitele axei y
+xlim([0 10])			      %limitele axei x  
 xlabel('Axa timpului')              %notarea axei 0X
 ylabel('Amplitudine')            %notarea axei 0Y
 title('Semnal cu rezolutie temporara de 2ms')           %denumirea graficului
