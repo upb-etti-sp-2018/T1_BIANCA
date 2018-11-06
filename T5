@@ -1,0 +1,30 @@
+T=4;                                  %Perioada
+t=0:0.002:3*T;                        %%rezolutia temporara
+y=abs(1.5 * sin(2*pi*0.25*t));        %Generare semnal sinusoidal redresat dublă alternanţă
+subplot(3,1,1)             %impartirea ferestrei output in 3 linii si o coloana
+plot(t,y)                  %afisarea graficului
+axis([0 10 -3 3])            %limitele axelor
+xlabel('Axa timpului')              %notarea axei 0X
+ylabel('Amplitudine')            %notarea axei 0Y
+title('Semnal cu rezolutie temporara de 2ms')           %denumirea graficului
+grid
+
+t=0:0.02:3*T;
+y=abs(1.5 * sin(2*pi*0.25*t));
+subplot(3,1,2)
+plot(t,y)
+axis([0 10 -3 3])
+xlabel('Axa timpului')
+ylabel('Amplitudine')
+title('Semnal cu rezolutie temporara de 20ms')
+grid
+
+t=0:0.2:3*T;
+y=abs(1.5 * sin(2*pi*0.25*t));
+subplot(3,1,3)
+plot(t,y)
+axis([0 10 -3 3])
+xlabel('Axa timpului')
+ylabel('Amplitudine')
+title('Semnal cu rezolutie temporara de 200ms')
+grid
