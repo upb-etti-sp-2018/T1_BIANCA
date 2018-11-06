@@ -1,5 +1,5 @@
 T=2;							%Perioada
-t = 0:0.002:5*T;					%rezolutia temporara)
+t = 0:0.002:5*T;					%rezolutia temporara
 x = -0.25+0.75*square(2*pi*0.5*t,25);			%-0.25 este componenta continua, 0.75 este amplitudineasi 25 este factorul de umplere
 dutycycle(x,t)						%legatura timpului in functie de factorul de umplere
 subplot(3,1,1)						%impartirea ferestrei output in 3 linii si o coloana
