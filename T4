@@ -1,13 +1,13 @@
-T=3;                                 % Perioada
-t = 0:0.002:10;                      % Domeniul T           
-x=0.8*sin(2*pi*0.33*t);              % Generare semnal sin  
-x(x<0) = 0;                          % Semnalul redresat
-subplot(3,1,1)
-plot(t,x);
-axis([0 10 -3  3])
-xlabel('T')
-ylabel('A')
-title('Sin monoalternanta 2ms')
+T=3;                                 %Perioada
+t = 0:0.002:10;                      %Rezolutia temporara         
+x=0.8*sin(2*pi*0.33*t);              %Generare semnal sinusoidal mono alternanţă
+x(x<0) = 0;                          %Semnalul redresat
+subplot(3,1,1)                %impartirea ferestrei output in 3 linii si o coloana
+plot(t,x);          %afisarea graficului	
+axis([0 10 -3  3])        %limitele axelor
+xlabel('T')         %notarea axei 0X
+ylabel('A')         %notarea axei 0Y
+title('Semnal cu rezolutie temporara de 2ms')         %denumirea graficului
 grid
 
 t = 0:0.02:10;                               
@@ -18,7 +18,7 @@ plot(t,x);
 axis([0 10 -3  3])
 xlabel('T')
 ylabel('A')
-title('Sin monoalternanta 20ms')
+title('Semnal cu rezolutie temporara de 20ms')
 grid
 
 t = 0:0.2:10;                                  
@@ -29,5 +29,5 @@ plot(t,x);
 axis([0 10 -3  3])
 xlabel('T')
 ylabel('A')
-title('Sin monoalternanta 200ms')
+title('Semnal cu rezolutie temporara de 200ms')
 grid
