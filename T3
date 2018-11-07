@@ -1,14 +1,14 @@
-array = [-1, 1];					%nivelul la care ajunge graficul
+array=[-1, 1];					%nivelul la care ajunge graficul
 np=50;									        %numarul de pulsuri
-    Pcell = cell(1,np);							%returneaza matrici goale dintr-o celula vector
-    dt = .002;									
-    for i = 1:np								%parcurge fiecare puls
-        T = 2   ; 								%Perioada semnalului							
-        W = 0.25; 								%latime puls
-        t = 0:dt:T;								
-       Pcell{i} = randsample(array,1)*(t<=W); 			%functia randsample returneaza o valoare "1" aleatoare din vectorul "array"
+    Pcell=cell(1,np);							%returneaza matrici goale dintr-o celula vector
+    dt=.002;									
+    for i=1:np								%parcurge fiecare puls
+        T=2   ; 								%Perioada semnalului							
+        W=0.25; 								%latime puls
+        t=0:dt:T;								
+       Pcell{i}=randsample(array,1)*(t<=W); 			%functia randsample returneaza o valoare "1" aleatoare din vectorul "array"
     end										
-     pulse = [Pcell{:}];							%funtia ce afiseaza 1 vector celula de matrici goale pe axa 0X
+     pulse=[Pcell{:}];							%funtia ce afiseaza 1 vector celula de matrici goale pe axa 0X
      t = (0:length(pulse)-1)*dt;						%domeniul lui Pcell
      subplot(4,1,1)				%impartirea ferestrei output in 4 linii si o coloana
      plot(t,pulse) ;				%afisarea graficului				
@@ -21,16 +21,16 @@ grid
 
 array = [-3, -1, 1, 3];								
 np=50;									        
-    Pcell = cell(1,np);							
-    dt = .002;									
-    for i = 1:np								
-        T = 2   ; 															
-        W = 0.25; 								
-        t = 0:dt:T;								
-       Pcell{i} = randsample(array,1)*(t<=W); 					
+    Pcell=cell(1,np);							
+    dt=.002;									
+    for i=1:np								
+        T=2   ; 															
+        W=0.25; 								
+        t=0:dt:T;								
+       Pcell{i}=randsample(array,1)*(t<=W); 					
     end										
-     pulse = [Pcell{:}];							
-     t = (0:length(pulse)-1)*dt;						
+     pulse=[Pcell{:}];							
+     t=(0:length(pulse)-1)*dt;						
      subplot(4,1,2)
      plot(t,pulse) ;								
      ylim([-5 5])
@@ -40,18 +40,18 @@ np=50;
      title('Semnal dreptunghiular multinivel,aleator [-3 -1 1 3]')
 grid     
 
- array = [-5, -3, -1, 1, 3, 5];
+ array=[-5, -3, -1, 1, 3, 5];
  np=50;
- Pcell = cell(1,np);
-    dt = .002;
-    for i = 1:np
-        T = 2   ; %duration
-        W = 0.25; %pulse width
-        t = 0:dt:T;
-       Pcell{i} = randsample(array,1)*(t<=W); 
+ Pcell=cell(1,np);
+    dt=.002;
+    for i=1:np
+        T=2   ; %duration
+        W=0.25; %pulse width
+        t=0:dt:T;
+       Pcell{i}=randsample(array,1)*(t<=W); 
     end
-     pulse = [Pcell{:}];
-     t = (0:length(pulse)-1)*dt;
+     pulse=[Pcell{:}];
+     t=(0:length(pulse)-1)*dt;
      subplot(4,1,3)
      plot(t,pulse) ;
      ylim([-8 8])
@@ -61,18 +61,18 @@ grid
      title('Semnal dreptunghiular multinivel,aleator [-5 -3 -1 1 3 5]')
 grid     
 
- array = [-7 -5, -3, -1, 1, 3, 5 7];
+ array=[-7 -5, -3, -1, 1, 3, 5 7];
  np=50;
- Pcell = cell(1,np);
-    dt = .002;
-    for i = 1:np
-        T = 2   ; %duration
-        W = 0.25; %pulse width
-        t = 0:dt:T;
-       Pcell{i} = randsample(array,1)*(t<=W); 
+ Pcell=cell(1,np);
+    dt=.002;
+    for i=1:np
+        T=2   ; %duration
+        W=0.25; %pulse width
+        t=0:dt:T;
+       Pcell{i}=randsample(array,1)*(t<=W); 
     end
-     pulse = [Pcell{:}];
-     t = (0:length(pulse)-1)*dt;
+     pulse=[Pcell{:}];
+     t=(0:length(pulse)-1)*dt;
      subplot(4,1,4)
      plot(t,pulse) ;
      ylim([-10 10])
