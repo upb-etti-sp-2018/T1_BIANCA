@@ -1,8 +1,8 @@
-z=[0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0];
+z=[0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0];        %vectorul cu 21 elemente
 >> n=0:20;
 >> m=-5:15;
 >> figure
 subplot(2,1,1);
-stem(z,n) %reprezentarea grafica
+stem(z,n)        %reprezentarea grafica
 subplot(2,1,2);
-stem(z,m) %reprezentarea grafica
+stem(z,m)        %reprezentarea grafica
