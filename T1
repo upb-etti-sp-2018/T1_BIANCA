@@ -11,6 +11,8 @@ ylabel('Amplitudine')					        %notarea axei 0Y
 title('Semnal cu rezolutie temporara de 2ms')			                %denumirea graficului
 grid					 
 
+
+
 t = 0:0.02:5*T;
 x = -0.25+0.75*square(2*pi*0.5*t,25);
 subplot(3,1,2)
@@ -21,6 +23,8 @@ xlabel('Axa timpului')
 ylabel('Amplitudine')
 title('Semnal cu rezolutie temporara de 20ms')
 grid
+
+
 
 t = 0:0.2:5*T;
 x = -0.25+0.75*square(2*pi*0.5*t,25);
