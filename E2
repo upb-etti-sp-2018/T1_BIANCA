@@ -1,6 +1,6 @@
->> v=randn(1,33); %se creeaza vectorul cu elemente aleatorii
->> for i=1:33
-if v(i)<0 %se cauta elementele negative
+>> v=randn(1,33);        %se creeaza vectorul cu elemente aleatorii
+>> for i=1:33     %luam la rand fiecare element al vectorului
+if v(i)<0      %se cauta elementele negative
 v(i)
 end
 end
